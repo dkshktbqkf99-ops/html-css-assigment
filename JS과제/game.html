@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>몬스터 잡기 게임</title>
+  <style>
+    body {
+      font-family: 'Gowun Dodum', sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #game-area {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .monster {
+      width: 80px;
+      height: 80px;
+      background-color: #fe9d94;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .monster:hover {
+      background-color: #7c0202;
+    }
+  </style>
+</head>
+<body>
+  <h1>몬스터 잡기 게임</h1>
+  <p id="message">몬스터를 클릭해서 잡으세요!</p>
+  <div id="game-area"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
